@@ -9,7 +9,7 @@
         "predis"
     ],
     "require": {
-        "php": "^7.3",
+        "php": ">=7.3",
         "predis/predis": "^1.1",
         "ext-json": "*"
     },
