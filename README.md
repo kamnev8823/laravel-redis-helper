@@ -1,7 +1,7 @@
 # laravel-redis-helper
 Laravel Redis Helper package of Predis\Predis
 
-### Use Redis more effectively together with Laravel!
+### Use Redis more effectively with Laravel!
 ***
 
 ## Installation
