@@ -38,7 +38,7 @@ You can now using the Facades:
 
 #### `RedisHashHelper` working with hash in Redis:
 
- 1. Method `getAll` - get all values of key. If you set models collection in json, then you can decoded passing the second parameter `true` (default = false)
+ 1. Method `getAll` - get all values of key. If you set models collection in json, then you can decoded passing the second parameter `true` (default = false) and return Collection
  2. Method `get` - Get value on key. The first parameter is key, the second parameter is field(maybe model id), the third parameter is decoding json data (default = false).
  3. Method `set` - Set the string value of a hash field.
  4. Method `del` - Del one or more hash fields. The second parameter can be string or array.
