@@ -2,8 +2,14 @@
     "name": "kamnev/laravel-redis-helper",
     "description": "Laravel Redis Helper package of Predis\\Predis",
     "type": "library",
+    "keywords": [
+        "laravel",
+        "redis",
+        "helper",
+        "predis"
+    ],
     "require": {
-        "php": ">=7.4",
+        "php": "^7.3",
         "predis/predis": "^1.1",
         "ext-json": "*"
     },
