@@ -16,12 +16,12 @@ Add from .env redis settings
   REDIS_PORT=your_redis_port
   REDIS_CLIENT=predis
 ```
+***
 
 ## Usage
 
 You can now using the Facades:
 
-***
 #### `RedisStringHelper` working with strings in Redis:
 
  1. Method `set` takes 4 parameters `set(string $key, string $value, string $option = "KEEPTTL", int $time = 600)`
