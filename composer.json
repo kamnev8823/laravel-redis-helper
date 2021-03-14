@@ -1,5 +1,6 @@
 {
     "name": "kamnev/laravel-redis-helper",
+    "version": "1.0",
     "description": "Laravel Redis Helper package of Predis\\Predis",
     "type": "library",
     "keywords": [
@@ -9,7 +10,7 @@
         "predis"
     ],
     "require": {
-        "php": ">=7.3",
+        "php": "^7.3|^8.0",
         "predis/predis": "^1.1",
         "ext-json": "*"
     },
