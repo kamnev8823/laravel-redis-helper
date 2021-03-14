@@ -30,10 +30,10 @@ You can now using the Facades:
  
 ```php
   //Set string value in cache
-  RedisStringHelper::set('product', json_encode(Product::all()), 'EX', 6000)
+  RedisStringHelper::set('products', json_encode(Product::all()), 'EX', 6000)
   
   //Get decoded products 
-  RedisStringHelper::get('product', true)
+  RedisStringHelper::get('products', true)
 ```
 
 #### `RedisHashHelper` working with hash in Redis:
@@ -47,11 +47,11 @@ You can now using the Facades:
   RedisHashHelper::getAll('products', true)
   
   //Get value on key 
-  RedisHashHelper::get('product', 2, true)
+  RedisHashHelper::get('products', 2, true)
   
   //Set the string value of a hash field
-  RedisHashHelper::set('product', 2, json_encode(Product::find(3)))
+  RedisHashHelper::set('products', 2, json_encode(Product::find(3)))
   
   //Del one or more hash fields
-  RedisHashHelper::del('product', [1,2,3,4, etc..]))
+  RedisHashHelper::del('products', [1,2,3,4, etc..]))
 ```
