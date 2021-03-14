@@ -1,0 +1,36 @@
+{
+    "name": "kamnev/laravel-redis-helper",
+    "description": "Laravel Redis Helper package of Predis\\Predis",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "predis/predis": "^1.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "v6.13.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kamnev",
+            "email": "sapphire.s@bk.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RedisHelper\\" : "./src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RedisHelper\\RedisHelperServiceProvider"
+            ],
+            "aliases": {
+                "RedisStringHelper": "RedisHelper\\HelperString\\RedisStringHelperFacade",
+                "RedisHashHelper": "RedisHelper\\HelperHash\\RedisHashHelperFacade"
+            }
+        }
+    }
+}
