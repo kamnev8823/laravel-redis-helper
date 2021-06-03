@@ -22,7 +22,7 @@ Add from .env redis settings
 
 You can now using the Facades:
 
-#### `RedisStringHelper` working with strings in Redis:
+#### `RedisString` working with strings in Redis:
 
  1. Method `set` takes 4 parameters `set(string $key, string $value, string $option = "KEEPTTL", int $time = 600)`
     `$option` supports a set of options that modify its behavior: "EX" or "EXAT" or "PXAT" or "NX" or "XX" or "KEEPTTL" or "GET".
@@ -36,7 +36,7 @@ You can now using the Facades:
   RedisString::get('products', true);
 ```
 
-#### `RedisHashHelper` working with hash in Redis:
+#### `RedisHash` working with hash in Redis:
 
  1. Method `getAll` - get all values of key. If you set models collection in json, then you can decoded passing the second parameter `true` (default = false), the fird parameter convert to array or object StdClass return Collection
  2. Method `getAllVal` - get all values. 
