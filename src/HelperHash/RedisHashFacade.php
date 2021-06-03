@@ -5,10 +5,10 @@ namespace RedisHelper\HelperHash;
 
 use Illuminate\Support\Facades\Facade;
 
-class RedisHashHelperFacade extends Facade
+class RedisHashFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return RedisHashHelper::class;
+        return RedisHash::class;
     }
 }

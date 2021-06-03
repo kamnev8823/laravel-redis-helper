@@ -1,6 +1,6 @@
 {
     "name": "kamnev/laravel-redis-helper",
-    "version": "1.0",
+    "version": "0.4",
     "description": "Laravel Redis Helper package of Predis\\Predis",
     "type": "library",
     "keywords": [
@@ -35,8 +35,8 @@
                 "RedisHelper\\RedisHelperServiceProvider"
             ],
             "aliases": {
-                "RedisStringHelper": "RedisHelper\\HelperString\\RedisStringHelperFacade",
-                "RedisHashHelper": "RedisHelper\\HelperHash\\RedisHashHelperFacade"
+                "RedisHash": "RedisHashFacade",
+                "RedisString": "RedisStringHelper"
             }
         }
     }

@@ -2,8 +2,8 @@
 namespace RedisHelper;
 
 use Illuminate\Support\ServiceProvider;
-use RedisHelper\HelperHash\RedisHashHelper;
-use RedisHelper\HelperString\RedisStringHelper;
+use RedisHelper\HelperHash\RedisHash;
+use RedisHelper\HelperString\RedisString;
 
 class RedisHelperServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class RedisHelperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(RedisHashHelper::class);
-        $this->app->bind(RedisStringHelper::class);
+        $this->app->bind(RedisHash::class);
+        $this->app->bind(RedisString::class);
     }
 }
