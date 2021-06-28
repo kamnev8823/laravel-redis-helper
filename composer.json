@@ -12,6 +12,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "predis/predis": "^1.1",
+        "illuminate/redis": "^8.48",
         "ext-json": "*"
     },
     "require-dev": {
