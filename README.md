@@ -9,12 +9,28 @@ Laravel Redis Helper package of Predis\Predis
 ```sh
   composer require kamnev/laravel-redis-helper
 ```
+
+###Laravel
 Add from .env redis settings 
 ```php
   REDIS_HOST=your_redis_host
   REDIS_PASSWORD=your_redis_password
   REDIS_PORT=your_redis_port
   REDIS_CLIENT=predis
+```
+***
+###Lumen
+Add from .env redis settings
+```php
+  REDIS_HOST=your_redis_host
+  REDIS_PASSWORD=your_redis_password
+  REDIS_PORT=your_redis_port
+  REDIS_CLIENT=predis
+
+```
+Register it in bootstrap/app.php
+```php 
+  $app->register(Illuminate\Redis\RedisServiceProvider::class);
 ```
 ***
 
