@@ -10,7 +10,7 @@ Laravel Redis Helper package of Predis\Predis
   composer require kamnev/laravel-redis-helper
 ```
 
-###Laravel
+### Laravel
 Add from .env redis settings 
 ```php
   REDIS_HOST=your_redis_host
@@ -19,7 +19,7 @@ Add from .env redis settings
   REDIS_CLIENT=predis
 ```
 ***
-###Lumen
+### Lumen
 Add from .env redis settings
 ```php
   REDIS_HOST=your_redis_host
