@@ -9,14 +9,43 @@ class RedisLists
 {
 
     /**
-     * Insert all the specified values at the tail of the list stored at key
+     * Append one or multiple elements to a list
      *
      * @param string $key
-     * @param array|string $elements
+     * @param string $element
      * @return int
      */
-    public static function push(string $key, $elements): int
+    public static function rpush(string $key, string $element): int
     {
-        return Redis::rpush($key, $elements);
+        return Redis::rpush($key, $element);
+    }
+
+    /**
+     * Append one or multiple elements to a list
+     *
+     * @param string $key
+     * @param string $element
+     * @return int
+     */
+    public static function lpush(string $key, string $element): int
+    {
+        return Redis::lpush($key, $element);
+    }
+
+    /**
+     * Remove and get the first elements in a list
+     *
+     * @param string $key
+     * @param int $count
+     * @param bool $decode
+     * @return int
+     */
+    public static function lpop(string $key, int $count, bool $decode = false, bool $toArray = false): int
+    {
+        $data = Redis::lpop($key, $count);
+
+        if ($decode) {
+            foreach ($data)
+        }
     }
 }
